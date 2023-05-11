@@ -1,2 +1,2 @@
-#!usr/bin/bash
-echo $dir_path $realpath $0
+#!/bin/bash
+echo "$(pwd)"
