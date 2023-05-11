@@ -1,2 +1,2 @@
-#!/bin/bash
-echo $dirpath $realpath $0
+#!usr/bin/bash
+echo $dir_path $realpath $0
