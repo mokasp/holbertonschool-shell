@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /ect/passwd | head notes
+cat /ect/passwd | head -10
