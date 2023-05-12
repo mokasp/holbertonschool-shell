@@ -1,2 +1,2 @@
 #!/bin/bash
-chown --from=guillaume /tmp/hello
+chown --from=guillaume /tmp/h$/hello
