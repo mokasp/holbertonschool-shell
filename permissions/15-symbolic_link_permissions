@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent /permissions/_hello
+chown vincent:vincent /permissions/_hello
