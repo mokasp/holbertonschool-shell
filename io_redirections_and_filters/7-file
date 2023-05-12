@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Best School" | fmt ~/holbertonschool-shell/io_redirections_and_filters/'\*\\'\"Best School"\'\''\\*$\?\*\*\*\*\*\*:)'
+echo "Best School" | fmt '\*\\'\"Best School"\'\''\\*$\?\*\*\*\*\*\*:)'
