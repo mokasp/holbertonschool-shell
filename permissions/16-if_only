@@ -1,1 +1,2 @@
 #!/bin/bash
+chown --from=guillaume vincent ~/holbertonschool-shell/permissions/hello
