@@ -1,1 +1,2 @@
 #!/bin/bash
+cat ~/holbertonschool-shell/io_redirections_and_filters/iacta | head -3 | tail +13
