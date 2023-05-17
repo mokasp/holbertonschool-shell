@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH=$PATH:$OLDPWD
+export PATH=~/holbertonschool_shell/init_files_variables_and_expansions/action:$PATH
