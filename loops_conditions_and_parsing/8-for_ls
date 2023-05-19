@@ -3,5 +3,5 @@
 for i in *
 do
 	i="${i%*-}"
-	echo ${i##*-}
+	echo "${i##*-}"
 done
