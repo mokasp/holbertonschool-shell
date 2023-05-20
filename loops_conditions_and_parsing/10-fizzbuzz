@@ -4,7 +4,7 @@ for ((i=1;i<=100;i++))
 do
 	if ! ((i%15))
 	then
-		echo Fizzbuzz
+		echo FizzB``uzz
 	elif ! ((i%3))
 	then
 		echo Fizz
