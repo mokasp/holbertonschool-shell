@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#script that displays 'Best School' 10 times using until loopi
+while cat /etc/passwd
+do
+	cut -d: -f1,3,6
+done
