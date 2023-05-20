@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #script that displays formatted error log
-awk '{ print $1, $9 }' accesslog
+awk '{ print $1, $9 }' apache-access.log
