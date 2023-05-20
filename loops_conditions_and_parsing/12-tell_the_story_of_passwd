@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#script that displays 'Best School' 10 times using until loopi
+filename="/etc/passwd"
+while IFS=$'\n' read -r line
+do
+	The user $line | cut -d: -f1) is part of the $(cat /etc/passwd | cut -d: -f4) gang, lives in $(cat /etc/passwd | cut -d: -f6) and rides $(cat /etc/passwd | cut -d: -f7). $(cat /etc/passwd | cut -d: -f3)'s place is protected by the passcode $(cat /etc/passwd | cut -d: -f2), more info about the user here: $(cat /etc/passwd | cut -d: -f5)"
+done < "$filename"
