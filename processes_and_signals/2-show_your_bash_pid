@@ -1,0 +1,4 @@
+#!/bin/env bash
+#script that displays lines containing bash
+# shellcheck disable=SC2009
+ps -au | grep bash
