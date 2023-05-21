@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#script that kills an infinite loop
+trap "echo I am invincible!!!" 15 
+trap "echo Y U no love me?!" 2
+trap "rm /var/run/myscript.pid" 3
+i=1
+while [ "$i" -gt 0 ]
+do
+	if [ "$i" -eq 1 ]
+	then
+		echo -e '#!/usr/bin/env bash\npgrep -f myscript.pid -l' > /var/run/myscript.pid
+	fi
+	if [ "$i" -eq 2 ]
+	then
+		chmod u+x /var/run/myscript.pid
+	fi
+	echo "To infinity and beyond"
+	i=$((i+1))
+	sleep 2
+done
