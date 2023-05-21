@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #script that kills an infinite loop
-trap "echo I am invincible!!!" 15 
+trap "echo I hate the kill command; exit" 15
 trap "echo Y U no love me?!" 2
-trap "rm /var/run/myscript.pid" 3
+trap "rm /var/run/myscript.pid; exit" 3
 i=1
 while [ "$i" -gt 0 ]
 do
