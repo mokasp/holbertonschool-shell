@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#script that displays a phrase infinitely
+i=1
+while [ "$i" -gt 0 ]
+do
+	echo "To infinity and beyond"
+	i=$((i+1))
+	sleep 2
+done
