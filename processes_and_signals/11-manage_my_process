@@ -7,7 +7,7 @@ case "$1" in
 		./manage_my_process start &
 		;;
 	stop)
-	       	rm -r /var/run/my_process.pid
+	       	sudo rm /var/run/my_process.pid
 		echo "manage_my_process stopped"
 		pkill -f manage_my_process -15 &
 		;;
