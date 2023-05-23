@@ -8,7 +8,7 @@ case "$1" in
 		;;
 	stop)
 	       	echo "manage_my_process stopped"
-		rm "/var/run/my_process.pid"
+		rm /var/run/my_process.pid
 		pkill -f manage_my_process -15 &
 		;;
 	restart)
