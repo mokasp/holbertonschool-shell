@@ -7,16 +7,17 @@ case "$1" in
 		./manage_my_process start &
 		;;
 	stop)
-		rm /var/run/my_process.pid;
+		if [ -f /var/run/my_process.pid ]
+		then
+		rm /var/run/my_process.pid
 		echo "manage_my_process stopped"
 		pkill -f manage_my_process -15 &
+		fi
 		;;
 	restart)
-		rm /var/run/my_process.pid
 	       	echo "pidof pidof" > /var/run/my_process.pid
 		echo "manage_my_process restarted"
 		pkill -f manage_my_process -15 &
-		./manage_my_process start &
 		;;
 	*)
 		echo "Usage: manage_my_process {start|stop|restart}"
