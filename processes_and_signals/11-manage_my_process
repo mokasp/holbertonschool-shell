@@ -12,7 +12,7 @@ case "$1" in
 		pkill -f manage_my_process -15 &
 		;;
 	restart)
-		rm /var/run/my_process.pid
+		rm /var/run/my_process.pid &
 	       	echo "pidof pidof" > /var/run/my_process.pid
 		echo "manage_my_process restarted"
 		pkill -f manage_my_process -15 &
